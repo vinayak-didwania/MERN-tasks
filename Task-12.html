@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 12</title>
+    <style>
+        body {
+            background-color: rgba(162, 43, 85, 255);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            width: 50vw;
+            height: 50vh;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 50px;
+            width: 100%;
+        }
+
+        .row label {
+            margin-right: 10px;
+            width: 30%;
+            text-align: left;
+        }
+
+        .row input,
+        .row select,
+        .row textarea {
+            flex-grow: 1;
+            padding: 5px;
+            border: 1.5px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .btn {
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 40px;
+            color: black;
+            font-size: x-large;
+            font-weight: bolder;
+            cursor: pointer;
+            background-color: white;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* Style for radio buttons */
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .radio-group input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your name">
+            </div>
+            <div class="row">
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Your email">
+            </div>
+            <div class="row">
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+            </div>
+            <div class="row">
+                <label for="phoneno">Phone Number:</label>
+                <input type="tel" id="phoneno">
+            </div>
+            <div class="row">
+                <label for="gender">Gender:</label>
+                <div class="radio-group">
+                    <label for="male">
+                        Male:
+                        <input type="radio" id="male" name="gender" value="Male">
+                    </label>
+                    <label for="female">
+                        Female:
+                        <input type="radio" id="female" name="gender" value="Female">
+                    </label>
+                    <label for="others">
+                        Others:
+                        <input type="radio" id="others" name="gender" value="Others">
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <label for="language">Language:</label>
+                <select id="language">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="Telugu">Telugu</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="pincode">Zip Code:</label>
+                <input type="text" id="pincode">
+            </div>
+            <div class="row">
+                <label for="about">About:</label>
+                <textarea id="about" placeholder="Write about yourself..."></textarea>
+            </div>
+            <button class="btn">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>

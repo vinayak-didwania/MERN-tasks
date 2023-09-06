@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 6</title>
+</head>
+<style>
+    .normal-table th, .normal-table td {
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .normal-table table {
+        border-radius: 10px;
+    }
+
+    .border-shapes-table {
+        width: 500px;
+        height: 300px;
+    }
+    .border-shapes-table th:first-child {
+        width: 200px;
+        height: 50px;
+        border: 3px solid green;
+        border-radius: 7px;
+    }
+    .border-shapes-table th:nth-child(2) {
+        width: 200px;
+        height: 50px;
+        border: 3px solid green;
+        border-radius: 9px;
+    }
+    .border-shapes-table th:last-child {
+        width: 200px;
+        height: 50px;
+        border: 3px solid green;;
+        border-radius: 15px;
+    }
+    .border-shapes-table td:first-child {
+        width: 200px;
+        height: 50px;
+        border: 3px solid green;
+        border-radius: 10px;
+    }
+    .border-shapes-table td:nth-child(2) {
+        width: 200px;
+        height: 50px;
+        border: 3px solid green;
+    }
+    .border-shapes-table td:nth-child(3) {
+        width: 200px;
+        height: 50px;
+        border: 3px solid green;
+        border-radius: 15px;
+    }
+    .row3 td:first-child {
+        /* width: 200px;
+        height: 50px; */
+        border-radius: 50px;
+    }
+    .row3 td:nth-child(3) {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 0px;
+    }
+</style>
+<body>
+    <table bgcolor="skyblue" style="width: 100%; border: 1px solid black;" class="normal-table">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table class="border-shapes-table" align="center" cellspacing="25px">
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="row3">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
